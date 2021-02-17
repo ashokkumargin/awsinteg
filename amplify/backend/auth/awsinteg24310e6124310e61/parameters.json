@@ -1,0 +1,74 @@
+{
+    "identityPoolName": "awsinteg24310e61_identitypool_24310e61",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "awsint24310e61",
+    "userPoolName": "awsinteg24310e61_userpool_24310e61",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email",
+        "middle_name",
+        "given_name",
+        "phone_number"
+    ],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email",
+        "middle_name",
+        "given_name",
+        "phone_number"
+    ],
+    "userpoolClientReadAttributes": [
+        "email",
+        "middle_name",
+        "given_name",
+        "phone_number"
+    ],
+    "userpoolClientLambdaRole": "awsint24310e61_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": true,
+    "sharedId": "24310e61",
+    "resourceName": "awsinteg24310e6124310e61",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "manual",
+    "thirdPartyAuth": false,
+    "usernameAttributes": [
+        "email, phone_number"
+    ],
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "triggers": "{}",
+    "hostedUI": false,
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": [],
+    "dependsOn": []
+}
